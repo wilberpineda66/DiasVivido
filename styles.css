@@ -1,0 +1,96 @@
+:root {
+  --color-dark: #161616;
+  --color-accent: #FF7954;
+  --color-secondary: #F9D7CD;
+  --color-light: #FFEAE5;
+  --color-white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-dark);
+  color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-color: var(--color-accent);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: var(--color-light);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+input, button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin: 0.625rem 0;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input {
+  background-color: var(--color-dark);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-light);
+}
+
+input::placeholder {
+  color: rgba(249, 215, 205, 0.6);
+}
+
+button {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-white);
+}
+
+#resultado {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: var(--color-secondary);
+}
+
+/* RESPONSIVE DESIGN 
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input, button {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+
+  #resultado {
+    font-size: 1rem;
+  }
+}
